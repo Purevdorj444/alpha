@@ -12,17 +12,19 @@
     }
     nav {
         padding: 20px 40px;
+        z-index: 10;
     }
     ul {
       z-index: 2;
         position:absolute;
         width: 100%;
-        height: 400px;
+        height: 0;
         background: #FFFFFF;
         border-bottom: 4px solid #D90429;
         top: 80px;
-        padding: 40px 0;
-        right: -100%;
+        /* padding: 40px 0; */
+        opacity: 0;
+        left: 0;
         text-align: center;
         transition: all .5s;
     }
@@ -33,6 +35,7 @@
     nav ul li a {
         font-size: 16px;
         color: #2B2D42;
+        opacity: 0;
     }
     a:hover, a.active {
         color: #D90429;
@@ -48,8 +51,21 @@
         border-left: 1px solid #F2F4F7;
     }
     #check:checked ~ ul {
-        right: 0px;
+        top: 80px;
+        left: 0;
+        opacity: 100%;
+        height: 400px;
+        padding: 40px 0;
     }
+    #check:checked ~ ul > li a {
+      font-size: 16px;
+      color: #2B2D42;
+      opacity: 100%;
+  }
+  
+    a:hover, a.active {
+      color: #D90429 !important;
+   } 
 
     /***** Main *****/
     section {
@@ -125,6 +141,10 @@
         width: 320px;
         height: 380px;
     }
+    .service-card img {
+      width: 240px;
+      height: 240px;
+    }
 
     /***** Team Section *****/
     .profile-container {
@@ -143,49 +163,66 @@
 @media (max-width: 1119px) and (min-width: 768px) {
 
     /***** Navigation Bar *****/
+    
     .checkbtn {
-        display: block;
-    }
-    nav {
-        padding: 20px 40px;
-    }
-    ul {
-      z-index: 2;
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        background: #FFFFFF;
-        border-bottom: 4px solid #D90429;
-        top: 80px;
-        padding: 40px 0;
-        right: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        padding: 8px 0;
-    }
-    nav ul li a {
-        font-size: 16px;
-        color: #2B2D42;
-    }
-    a:hover, a.active {
-        color: #D90429;
-    } 
-    .lang {
-        margin-top: 32px;
-    }
-    .lang-mon {
-        border-right: 1px solid #F2F4F7;
-        margin-left: 0;
-    }
-    .lang-eng {
-        border-left: 1px solid #F2F4F7;
-    }
-    #check:checked ~ ul {
-        right: 0px;
-    }
+      display: block;
+  }
+  nav {
+      padding: 20px 40px;
+      z-index: 10;
+  }
+  ul {
+    z-index: 2;
+      position:absolute;
+      width: 100%;
+      height: 0;
+      background: #FFFFFF;
+      border-bottom: 4px solid #D90429;
+      top: 80px;
+      /* padding: 40px 0; */
+      opacity: 0;
+      left: 0;
+      text-align: center;
+      transition: all .35s;
+  }
+  nav ul li {
+      display: block;
+      padding: 8px 0;
+  }
+  nav ul li a {
+      font-size: 16px;
+      color: #2B2D42;
+      opacity: 0;
+  }
+  a:hover, a.active {
+      color: #D90429;
+  } 
+  .lang {
+      margin-top: 32px;
+  }
+  .lang-mon {
+      border-right: 1px solid #F2F4F7;
+      margin-left: 0;
+  }
+  .lang-eng {
+      border-left: 1px solid #F2F4F7;
+  }
+  #check:checked ~ ul {
+      top: 80px;
+      left: 0;
+      opacity: 100%;
+      height: 400px;
+      padding: 40px 0;
+  }
+  #check:checked ~ ul > li a {
+    font-size: 16px;
+    color: #2B2D42;
+    opacity: 100%;
+}
+
+  a:hover, a.active {
+    color: #D90429 !important;
+ } 
 
     /***** Main *****/
     section {
@@ -260,6 +297,10 @@
         height: 380px;
         gap: 16px;
     }
+    .service-card img {
+      width: 240px;
+      height: 240px;
+    }
 
     /***** Team Section *****/
     .project-section {
@@ -306,48 +347,64 @@
 
     /***** Navigation Bar *****/
     .checkbtn {
-        display: block;
-    }
-    nav {
-        padding: 20px 40px;
-    }
-    ul {
-      z-index: 2;
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        background: #FFFFFF;
-        border-bottom: 4px solid #D90429;
-        top: 80px;
-        padding: 40px 0;
-        right: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        padding: 8px 0;
-    }
-    nav ul li a {
-        font-size: 16px;
-        color: #2B2D42;
-    }
-    a:hover, a.active {
-        color: #D90429;
-    } 
-    .lang {
-        margin-top: 32px;
-    }
-    .lang-mon {
-        border-right: 1px solid #F2F4F7;
-        margin-left: 0;
-    }
-    .lang-eng {
-        border-left: 1px solid #F2F4F7;
-    }
-    #check:checked ~ ul {
-        right: 0px;
-    }
+      display: block;
+  }
+  nav {
+      padding: 20px 40px;
+      z-index: 10;
+  }
+  ul {
+    z-index: 2;
+      position:absolute;
+      width: 100%;
+      height: 0;
+      background: #FFFFFF;
+      border-bottom: 4px solid #D90429;
+      top: 80px;
+      /* padding: 40px 0; */
+      opacity: 0;
+      left: 0;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li {
+      display: block;
+      padding: 8px 0;
+  }
+  nav ul li a {
+      font-size: 16px;
+      color: #2B2D42;
+      opacity: 0;
+  }
+  a:hover, a.active {
+      color: #D90429;
+  } 
+  .lang {
+      margin-top: 32px;
+  }
+  .lang-mon {
+      border-right: 1px solid #F2F4F7;
+      margin-left: 0;
+  }
+  .lang-eng {
+      border-left: 1px solid #F2F4F7;
+  }
+  #check:checked ~ ul {
+      top: 80px;
+      left: 0;
+      opacity: 100%;
+      height: 400px;
+      padding: 40px 0;
+  }
+  #check:checked ~ ul > li a {
+    font-size: 16px;
+    color: #2B2D42;
+    opacity: 100%;
+}
+
+  a:hover, a.active {
+    color: #D90429 !important;
+ } 
 
     /***** Main *****/
     section {
@@ -426,6 +483,10 @@
         height: 380px;
         gap: 16px;
     }
+    .service-card img {
+      width: 240px;
+      height: 240px;
+    }
 
     /***** Team Section *****/
     .profile-image img {
@@ -478,50 +539,65 @@
 
     /***** Navigation Bar *****/
     .checkbtn {
-        display: block;
-    }
-    nav {
-        padding: 16px 20px;
-        height: 72px;
-    }
-    ul {
-      z-index: 2;
-        position: absolute;
-        width: 100%;
-        height: 400px;
-        background: #FFFFFF;
-        border-bottom: 4px solid #D90429;
-        top: 72px;
-        padding: 32px 0;
-        right: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        padding: 8px 0;
-    }
-    nav ul li a {
-        font-size: 16px;
-        color: #2B2D42;
-    }
-    a:hover, a.active {
-        color: #D90429;
-    } 
-    .lang {
-        margin-top: 32px;
-    }
-    .lang-mon {
-        border-right: 1px solid #F2F4F7;
-        margin-left: 0;
-    }
-    .lang-eng {
-        border-left: 1px solid #F2F4F7;
-    }
-    #check:checked ~ ul {
-        right: 0px;
-    }
+      display: block;
+  }
+  nav {
+      padding: 20px 40px;
+      height: 72px;
+      z-index: 10;
+  }
+  ul {
+    z-index: 2;
+      position:absolute;
+      width: 100%;
+      height: 0;
+      background: #FFFFFF;
+      border-bottom: 4px solid #D90429;
+      top: 72px;
+      /* padding: 40px 0; */
+      opacity: 0;
+      left: 0;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li {
+      display: block;
+      padding: 8px 0;
+  }
+  nav ul li a {
+      font-size: 16px;
+      color: #2B2D42;
+      opacity: 0;
+  }
+  a:hover, a.active {
+      color: #D90429;
+  } 
+  .lang {
+      margin-top: 32px;
+  }
+  .lang-mon {
+      border-right: 1px solid #F2F4F7;
+      margin-left: 0;
+  }
+  .lang-eng {
+      border-left: 1px solid #F2F4F7;
+  }
+  #check:checked ~ ul {
+      top: 72px;
+      left: 0;
+      opacity: 100%;
+      height: 400px;
+      padding: 40px 0;
+  }
+  #check:checked ~ ul > li a {
+    font-size: 16px;
+    color: #2B2D42;
+    opacity: 100%;
+}
 
+  a:hover, a.active {
+    color: #D90429 !important;
+ } 
     /***** Main *****/
     section {
         padding: 40px 20px 40px 20px;
@@ -605,6 +681,10 @@
         width: 320px;
         height: 380px;
         gap: 16px;
+    }
+    .service-card img {
+      width: 240px;
+      height: 240px;
     }
 
     /***** Team Section *****/
