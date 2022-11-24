@@ -340,7 +340,7 @@
         gap: 60px;
     }
     .contact-column {
-        width: 240px;
+        width: 280px;
       }
   }
 @media (max-width: 767px) and (min-width: 576px) {
@@ -532,7 +532,13 @@
         gap: 60px;
     }
     .contact-column {
-        width: 240px;
+        width: 270px;
+      }
+      .contact-place-column {
+        order: 1;
+      }
+      .contact-info-column {
+        order: 2;
       }
   }
 @media (max-width: 575px) {
@@ -745,10 +751,16 @@
     }
     .contact-row {
         flex-direction: column;
-        gap: 20px;
+        gap: 8px;
     }
     .contact-column {
         width: 280px;
+      }
+      .contact-place-column {
+        order: 1;
+      }
+      .contact-info-column {
+        order: 2;
       }
       .footer-text{
         padding: 0 30px;
