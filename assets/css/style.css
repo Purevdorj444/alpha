@@ -359,8 +359,9 @@ a.active, a:hover, a:active {
   align-items: center;
 }
 .profile-image img {
-  display: none;
+  display: block;
   width: 320px;
+  transform: scaleX(-1);
   border-bottom: 4px solid #EF233C;
 }
 .profile-title {
@@ -381,9 +382,13 @@ a.active, a:hover, a:active {
 .align-right {
   align-items: flex-end;
 }
+
 .text-align-right {
   text-align: justify;
   text-justify: right;
+}
+.text-align-right {
+  text-align: right;
 }
 
 /***** Project Section *****/

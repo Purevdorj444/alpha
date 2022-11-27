@@ -713,9 +713,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    .profile-container-second {
+    /* .profile-container-second {
         flex-direction: column-reverse;
-    }
+    } */
     .profile-content {
         width: calc(100vw - 40px);
         
