@@ -54,7 +54,7 @@ section {
 .color-primary-dark {
   color: #C80B2C !important;
 }
-h1 {
+.display-xl {
   font-size: 80px;
   line-height: 72px;
   font-weight: 700;
@@ -62,7 +62,7 @@ h1 {
   text-transform: uppercase;
   color: #2B2D42;
 }
-h2 {
+h1 {
   font-size: 36px;
   line-height: 54px;
   font-weight: 700;
@@ -209,7 +209,7 @@ a.active, a:hover, a:active {
   z-index: 1;
   height: 400px;
   width: 100%;
-  background-image: url(../images/background_blur.png);
+  background-image: url(../images/background.png);
   background-position: center;
   background-size: cover;
   position: relative;
@@ -361,7 +361,6 @@ a.active, a:hover, a:active {
 .profile-image img {
   display: block;
   width: 320px;
-  transform: scaleX(-1);
   border-bottom: 4px solid #EF233C;
 }
 .profile-title {
